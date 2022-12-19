@@ -1,4 +1,4 @@
-name: Build documentation with sphinx and RTD theme
+name: Documentation
 
 on:
   push:
@@ -21,7 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
        image: sphinxdoc/sphinx
-       entrypoint: /bin/bash
 
     steps:
       - name: Checkout
